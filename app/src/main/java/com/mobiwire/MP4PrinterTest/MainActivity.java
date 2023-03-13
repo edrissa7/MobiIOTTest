@@ -41,7 +41,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void cashPowerPrint(View view){
+        CsPrinter printer=new CsPrinter();
+        printer.addTextToPrint("JAH POWER",null,50,true,false,1);
+        printer.addTextToPrint("-----",null,50,true,false,1);
+        printer.addTextToPrint("2023-01-04 11:38:01",null,20,true,false,0);
+        printer.addTextToPrint("RECEIPT NO .:","202301EIN000000004",20,true,false,0);
+        printer.addTextToPrint("METER NO .:","345678987",20,true,false,0);
+        printer.addTextToPrint("ABOUCARR JALLOW",null,20,true,false,0);
+        printer.addTextToPrint("655678445665",null,20,true,false,0);
+        printer.addTextToPrint("Electricity Credit",null,30,true,false,1);
+        printer.addTextToPrint("Token Number",null,20,true,false,1);
+        printer.addTextToPrint("--------------------",null,20,true,false,1);
+        printer.addTextToPrint("2345-3455-2345-5562",null,50,true,false,1);
+        printer.addTextToPrint("--------------------",null,20,true,false,1);
+        printer.addTextToPrint("Amount Paid .:","GMD 50",20,true,false,0);
+        printer.addTextToPrint("Service Fee .:","GMD 5",20,true,false,0);
+        printer.addTextToPrint("Cashpower Amount .:","GMD 45",20,true,false,0);
+        printer.addTextToPrint("Total Units","4.4KWH",20,true,false,0);
+        printer.addTextToPrint("Operator","Cherno Jallow",20,true,false,0);
+        printer.addTextToPrint("Use Energy Wisely!",null,20,true,false,1);
+        printer.addTextToPrint("TX,Phone: +220 3750915 - 2068611 ","GMD 50",20,true,false,1);
+        printer.addTextToPrint("Web: www.tglobal.co",null,20,true,false,1);
+        printer.print(MainActivity.this);
 
+
+    }
     public void print(View view) {
 
         CsPrinter printer=new CsPrinter();

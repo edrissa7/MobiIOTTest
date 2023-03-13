@@ -8,24 +8,27 @@
 
     <EditText
         android:id="@+id/text1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
         android:layout_height="wrap_content"
         android:hint="What to print"
         android:layout_centerInParent="true"/>
+
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Print Input"
-        android:layout_below="@id/text1"/>
+        android:layout_below="@id/text1"
+        android:layout_centerInParent="true"
+        android:text="Print Input" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Print"
-        android:onClick="print"
         android:layout_below="@id/btn1"
-       />
+        android:onClick="cashPowerPrint"
+        android:layout_centerInParent="true"
+        android:text="Power" />
 
 
 </RelativeLayout>
